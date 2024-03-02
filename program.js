@@ -7,3 +7,7 @@ if (Continuar == 1){
 
     console.log(Continuar);
 }
+if(Continuar != 1 & Continuar != 0){
+    console.error("Numeros invalidos ")
+    
+}
