@@ -12,9 +12,10 @@ if (Continuar == 1){
 
     console.log(Continuar);
 }
-if(Continuar != 1 & Continuar != 0){
-    console.error(`Numeros invalidos` );
-        continue;
+if(Continuar !== 1 && Continuar !== 0 ){
+
+    console.error(`Numeros invalidos`)
+   
     
 }
 while (Continuar == 1 ){
@@ -24,8 +25,17 @@ while (Continuar == 1 ){
      cantidaddehijos= +readlineSync.question(`Cuantos Hijos tiene`)
      if (cantidaddehijos > 1){
         let cdehijosprimaria = +readlineSync.question("cuantos hijos estudian en primaria: ")
-        i
-     }
+        
+     } if (cdehijosprimaria < cantidaddehijos) {
+        let cdehijossecundaria = +readlineSync.question(`ingresa la cantina de estudian en secundaria`)
+        if (isNaN(cdehijossecundaria)){
+            console.error(`Tiene que ser numerico `)
+            continue;
+        }
+     
+    }
+        
+     
 
 
      
