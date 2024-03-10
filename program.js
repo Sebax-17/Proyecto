@@ -4,10 +4,10 @@ let cantidaddehijos = 0;
 let genero = ``;
 let estrato = ``;
 let Zona = ``;
-let Mujercontador = 0;
+Continuar = 1;
 const Nacionalidad = readlineSync.question(`Ingrese La Nacionalidad En La que se encuentra la empresa`)
 
-while (Continuar ==1 ){
+while (Continuar == Continuar){
    if (Nacionalidad == Nacionalidad){
      genero = readlineSync.question(`ingresa tu genero M ó H :`)
      sueldo = +readlineSync.question(`Ingresa El Sueldo `)
