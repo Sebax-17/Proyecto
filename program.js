@@ -4,7 +4,7 @@ let cantidaddehijos = 0;
 let genero = ``;
 let estrato = ``;
 let Zona = ``;
-Continuar = 1;
+let Continuar = 0;
 const Nacionalidad = readlineSync.question(`Ingrese La Nacionalidad En La que se encuentra la empresa`)
 
 while (Continuar == Continuar){
@@ -65,7 +65,7 @@ while (Continuar == Continuar){
      
     console.log(sueldo)
 
-let Continuar = +readlineSync.question('Si= 1 , No= 0 :  ');
+ Continuar = +readlineSync.question('Si= 1 , No= 0 :  ');
        if(genero == `M`){
         console
        }
