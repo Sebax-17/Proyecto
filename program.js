@@ -1,6 +1,6 @@
 const readlineSync = require('readline-sync');
 
-for (i;i< nEmpleados;i++){
+for (i=0;i< nEmpleados;i++){
 function calcularSubsidioEstrato(estrato, salario) {
     if (estrato === 1) {
         return salario * 0.15;
