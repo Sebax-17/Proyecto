@@ -13,9 +13,9 @@ while (Continuar !==0){
   for (i=0;i<Nempleados;i++){  
    if (genero ==  "M" ){
      sueldo = +readlineSync.question(`Ingresa El Sueldo `)
-     estrato = +readlineSync.question(`Ingresa El Estrato En la Que Vives`)
-     hijos = readlineSync.question(`tienes Hijos`)
-        let zona = readlineSync.question(`Vive en Rural o Urbano`)
+     estrato = +readlineSync.question(`Ingresa El Estrato En la Que Vives `)
+     hijos = readlineSync.question(`tienes Hijos `)
+        let zona = readlineSync.question(`Vive en Rural o Urbano `)
         if (zona == `Rural`){
             sueldo = sueldo + 35000;
         }
@@ -34,10 +34,11 @@ while (Continuar !==0){
          subsidiosecundaria = +readlineSync.question(`Ingrese el subsidio de tenre hijos en secundaria`)
          subsidioUniversidad = +readlineSync.question(`Ingrese el subsidio de tenre hijos en Universidad`)
         }
-        if (cdehijosprimaria>0){
+
+        if(cdehijosprimaria>0){
         Sudsidiofinalprimaria = sueldo + (subsidioprimaria* cdehijosprimaria)
         }
-        if (candehijosUniversida>0){
+        if(candehijosUniversida>0){
         SudsidiofinalUniversidad = sueldo + (subsidioUniversidad* cantidaddehijos)
         }
         if (cdehijossecundaria>0){
