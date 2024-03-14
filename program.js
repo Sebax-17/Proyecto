@@ -35,13 +35,13 @@ while (Continuar !==0){
          subsidiosecundaria = +readlineSync.question(`Ingrese el subsidio de tenre hijos en secundaria`)
          subsidioUniversidad = +readlineSync.question(`Ingrese el subsidio de tenre hijos en Universidad`)
         }
-        if (cdehijosprimaria>0){
+        if(cdehijosprimaria>0){
             Sudsidiofinalprimaria = sueldo + (subsidioprimaria* cdehijosprimaria)
            }
-           if (candehijosUniversida>0){
+        if (candehijosUniversida>0){
             SudsidiofinalUniversidad = sueldo + (subsidioUniversidad* cantidaddehijos)
            }
-           if (cdehijossecundaria>0){
+        if (cdehijossecundaria>0){
             SudsidiofinalSecundaria = sueldo + (subsidiosecundaria* cantidaddehijos)
            }
 
@@ -73,13 +73,13 @@ while (Continuar !==0){
          subsidiosecundaria = +readlineSync.question(`Ingrese el subsidio de tenre hijos en secundaria`)
          subsidioUniversidad = +readlineSync.question(`Ingrese el subsidio de tenre hijos en Universidad`)
        }
-       if (cdehijosprimaria>0){
+       if (cdehijosprimaria !== 0){
         Sudsidiofinalprimaria = sueldo + (subsidioprimaria* cdehijosprimaria)
        }
-       if (candehijosUniversida>0){
+       if (candehijosUniversida !== 0){
         SudsidiofinalUniversidad = sueldo + (subsidioUniversidad* cantidaddehijos)
        }
-       if (cdehijossecundaria>0){
+       if (cdehijossecundaria !==0){
         SudsidiofinalSecundaria = sueldo + (subsidiosecundaria* cantidaddehijos)
        }
       sueldo = sueldo + sueldo
