@@ -4,11 +4,11 @@ let cantidaddehijos = 0;
 let genero = ``;
 let estrato = ``;
 let Zona = ``;
-let Continuar = 0;
+let Continuar = 1;
 let NonimaMujer = 0;
 let nonimaHombre = 0;
 genero = readlineSync.question("Ingresa tu genero M/F")
-while (Continuar == 1){
+while (Continuar !==0){
     let Nempleados = +readlineSync.question("cuantos empleados son?")
   for (i=0;i<Nempleados;i++){  
    if (genero ==  "M" ){
