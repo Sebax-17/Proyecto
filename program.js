@@ -13,6 +13,9 @@ let NonimaHombres = 0;
 let Genero = ``;
 let CanDeEmpleados = 0;
 let Extrangero = ``; 
+let SudFinalSecundaria = 0;
+let SudFinalUniversidad = 0;
+let SudsidioFinalPrimaria
  
 CanDeEmpleados = +readlineSync.question(`Cuantos empleados son? `)
 for(let i=0 ;i<CanDeEmpleados ; i++){
@@ -36,15 +39,15 @@ for(let i=0 ;i<CanDeEmpleados ; i++){
     CanDeHijosUniversidad = +readlineSync.question(`Cuantos Hijos tiene en la Universidad `)
     if(CanDeHijosPrimaria > 0 ){
         Sudsidioprimaria = +readlineSync.question(`Cual es el sudsidio para Primaria `)
-        let SudsidioFinalPrimaria = sueldo + (Sudsidioprimaria * CanDeHijosPrimaria)
+        SudsidioFinalPrimaria = sueldo + (Sudsidioprimaria * CanDeHijosPrimaria)
     }
     if(CanDeHijosSecundaria > 0){
         SudsidioSecundaria = +readlineSync.question(`Cual Es el Sudsidio para Secundaria `)
-        let SudFinalSecundaria = sueldo + (SudsidioSecundaria * CanDeHijosSecundaria)
+        SudFinalSecundaria = sueldo + (SudsidioSecundaria * CanDeHijosSecundaria)
     }
     if(CanDeHijosUniversidad > 0 ){
         SudsidioUniversidad = +readlineSync.question(`Cual es el Sudsidio para Universidad `)
-        let SudFinalUniversidad = sueldo + (SudsidioUniversidad * CanDeHijosUniversidad )
+        SudFinalUniversidad = sueldo + (SudsidioUniversidad * CanDeHijosUniversidad )
     }
     Genero = readlineSync.question(`Cual es tu genero M/F `)
     if(Genero == `M`){
@@ -53,7 +56,7 @@ for(let i=0 ;i<CanDeEmpleados ; i++){
         NonimaMujeres = sueldo + SudFinalSecundaria + SudFinalUniversidad + SudsidioFinalPrimaria
     }
     Extrangero = readlineSync.question(`Eres extrangero`)
-    
+
 
 }
 
