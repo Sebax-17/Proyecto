@@ -15,7 +15,10 @@ let CanDeEmpleados = 0;
 let Extrangero = ``; 
 let SudFinalSecundaria = 0;
 let SudFinalUniversidad = 0;
-let SudsidioFinalPrimaria
+let SudsidioFinalPrimaria = 0;
+let Costovuelo = 0;
+let EmpleadoCaro = 0;
+let SudsidiosSecundaria = 0;
  
 CanDeEmpleados = +readlineSync.question(`Cuantos empleados son? `)
 for(let i=0 ;i<CanDeEmpleados ; i++){
@@ -49,14 +52,32 @@ for(let i=0 ;i<CanDeEmpleados ; i++){
         SudsidioUniversidad = +readlineSync.question(`Cual es el Sudsidio para Universidad `)
         SudFinalUniversidad = sueldo + (SudsidioUniversidad * CanDeHijosUniversidad )
     }
+   
+    Extrangero = readlineSync.question(`Eres extrangero `)
+    if(Extrangero == `si`){
+        Costovuelo = +readlineSync.question(`Cuanto Los vuelos `)
+    }else{
+        Costovuelo = 0;
+    }
     Genero = readlineSync.question(`Cual es tu genero M/F `)
     if(Genero == `M`){
-        NonimaHombres = sueldo + SudFinalSecundaria + SudFinalUniversidad + SudsidioFinalPrimaria
+        NonimaHombres = sueldo + SudFinalSecundaria + SudFinalUniversidad + SudsidioFinalPrimaria + Costovuelo
     }else{
-        NonimaMujeres = sueldo + SudFinalSecundaria + SudFinalUniversidad + SudsidioFinalPrimaria
+        NonimaMujeres = sueldo + SudFinalSecundaria + SudFinalUniversidad + SudsidioFinalPrimaria + Costovuelo
     }
-    Extrangero = readlineSync.question(`Eres extrangero`)
-
+    if(NonimaHombres > NonimaMujeres){
+        EmpleadoCaro = NonimaHombres
+        console.info(`el Empleado mas caro es el empleado ${i}`)
+    }else{
+        EmpleadoCaro = NonimaMujeres
+        console.info(`el Empleado mas caro es el empleado ${i}`)
+    }
+    SudsidiosSecundaria = SudsidiosSecundaria + SudFinalSecundaria
 
 }
+console.info(`La nonima de los hombres es: ${NonimaHombres}`)
+console.info(`La Nomina de las Mujeres es: ${NonimaMujeres}`)
+console.info(`El empelado mas caro es: ${EmpleadoCaro}`)
+console.info(`Los Sudsidios gastados en secundaria es: ${SudsidiosSecundaria}`)
+console.info(`La empresa se ha gastado en vuelos ${Costovuelo}`)
 
