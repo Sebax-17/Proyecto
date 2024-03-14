@@ -10,7 +10,7 @@ let Genero = ``;
 let CanDeEmpleados = 0;
  
 CanDeEmpleados = +readlineSync.question(`Cuantos empleados son? `)
-For (i=0,i<CanDeEmpleados,i++)
+for(let i=0 ;i<CanDeEmpleados ; i++){
     console.info(CanDeEmpleados)
-
+}
 
