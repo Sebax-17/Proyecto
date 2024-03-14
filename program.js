@@ -26,8 +26,8 @@ while (Continuar !==0){
         }if (estrato == 3){
             sueldo = sueldo * 0.05
         }
-
-       if (hijos == `si` && hijos == `SI` && hijos == `Si`){
+       let hijos = readlineSync.question(`tienes Hijos `)
+       if (hijos == `si`){
          cdehijosprimaria = +readlineSync.question(`Cantidad de hijos que estudian en primaria`)
          cdehijossecundaria = +readlineSync.question(`ingresa la cantida de estudian en secundaria`)
          candehijosUniversida = +readlineSync.question(`Cuantos Hijos estudian en Univesidad`)
@@ -35,6 +35,15 @@ while (Continuar !==0){
          subsidiosecundaria = +readlineSync.question(`Ingrese el subsidio de tenre hijos en secundaria`)
          subsidioUniversidad = +readlineSync.question(`Ingrese el subsidio de tenre hijos en Universidad`)
         }
+        if (cdehijosprimaria>0){
+            Sudsidiofinalprimaria = sueldo + (subsidioprimaria* cdehijosprimaria)
+           }
+           if (candehijosUniversida>0){
+            SudsidiofinalUniversidad = sueldo + (subsidioUniversidad* cantidaddehijos)
+           }
+           if (cdehijossecundaria>0){
+            SudsidiofinalSecundaria = sueldo + (subsidiosecundaria* cantidaddehijos)
+           }
 
         
        
