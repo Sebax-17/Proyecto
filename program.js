@@ -9,15 +9,12 @@ let NonimaMujer = 0;
 let nonimaHombre = 0;
 genero = readlineSync.question("Ingresa tu genero M/F")
 while (Continuar == 1){
+    let Nempleados = +readlineSync.question("cuantos empleados son?")
+  for (i=0;i<Nempleados;i++){  
    if (genero ==  M ){
-     genero = readlineSync.question(`ingresa tu genero M ó H :`)
      sueldo = +readlineSync.question(`Ingresa El Sueldo `)
      estrato = +readlineSync.question(`Ingresa El Estrato En la Que Vives`)
      hijos = readlineSync.question(`tienes Hijos`)
-    
-   
-        sueldo = +readlineSync.question(`Ingresa El Sueldo `)
-        estrato = +readlineSync.question(`Ingresa El Estrato En la Que Vives`)
         let zona = readlineSync.question(`Vive en Rural o Urbano`)
         if (zona == `Rural`){
             sueldo = sueldo + 35000;
@@ -46,12 +43,12 @@ while (Continuar == 1){
        if (cdehijossecundaria>0){
         SudsidiofinalSecundaria = sueldo + (subsidiosecundaria* cantidaddehijos)
        }
-      
+      sueldo = sueldo + sueldo
        
         
         
     }
-
+  }
 }
      
 console.info(sueldo)
